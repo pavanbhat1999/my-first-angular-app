@@ -3,33 +3,34 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'my-first-angular-app';
   index: number = -1;
-  voteClick(id: number) {
+  voteClick(id: number, event) {
     if (this.index === id) {
       this.index = -1;
-    }
-    else {
+      let myvar = event.target;
+      myvar.innerText = 'VOTE';
+    } else {
       this.index = id;
+      let myvar = event.target;
+      myvar.innerText = 'UNVOTE';
     }
   }
 
   isSelected(id) {
     return this.index === id;
   }
-  isDisableVote(id){
-    if(this.index === id)
-    {
+
+  isDisableVote(id) {
+    if (this.index === id) {
       return 0;
     }
-    if (this.index !== -1){
+    if (this.index !== -1) {
       return 1;
-    }
-
-    else{
+    } else {
       return 0;
     }
   }
