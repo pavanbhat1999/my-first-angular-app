@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.block1,.block2 ,.block3{
+    width: 20%; height: 200px; background: red;
+}
