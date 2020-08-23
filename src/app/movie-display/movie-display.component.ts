@@ -11,5 +11,5 @@ export class MovieDisplayComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  @Input() movie;
+  @Input() tochild;
 }
