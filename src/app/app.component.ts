@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-first-angular-app';
-  movie : string = "Movie Component";
+  movie : string = "component changed";
   index: number = -1;
   voteClick(id: number, event) {
     if (this.index === id) {
