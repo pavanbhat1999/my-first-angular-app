@@ -117,6 +117,10 @@
               "devServerTarget": "my-first-angular-app:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
